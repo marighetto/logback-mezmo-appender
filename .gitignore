@@ -23,5 +23,8 @@
 hs_err_pid*
 
 #Intellij IDEA
-.idea/
+.idea
 *.iml
+
+#Compile
+.target
