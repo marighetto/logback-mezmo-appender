@@ -8,7 +8,7 @@
     <artifactId>logback-appender</artifactId>
     <version>1.0.0</version>
 
-    <name>Marighetto Logback Appender</name>
+    <name>Marighetto Logback com.marighetto.logback.Appender</name>
     <description>Just another Mezmo/LogDNA logback appender</description>
     <url>https://github.com/marighetto/logback-appender</url>
 

@@ -1,3 +1,5 @@
+package com.marighetto.logback;
+
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.UnsynchronizedAppenderBase;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -51,7 +53,7 @@ public class Appender extends UnsynchronizedAppenderBase<ILoggingEvent> {
       this.macAddress = getMacAddress();
 
     } catch (Exception e) {
-      logger.error("Appender : {}", e.getMessage());
+      logger.error("com.marighetto.logback.Appender : {}", e.getMessage());
     }
   }
 
@@ -100,7 +102,7 @@ public class Appender extends UnsynchronizedAppenderBase<ILoggingEvent> {
 
       if (httpConnection.getResponseCode() != 200) {
         logger.error(
-            "Appender : ({}) {} , {}",
+            "com.marighetto.logback.Appender : ({}) {} , {}",
             httpConnection.getResponseCode(),
             httpConnection.getResponseMessage(),
             new BufferedReader(new InputStreamReader(httpConnection.getErrorStream()))
@@ -110,7 +112,7 @@ public class Appender extends UnsynchronizedAppenderBase<ILoggingEvent> {
 
       httpConnection.disconnect();
     } catch (Exception e) {
-      logger.error("Appender : {}", e.getMessage());
+      logger.error("com.marighetto.logback.Appender : {}", e.getMessage());
     }
   }
 
